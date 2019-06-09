@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { User } from './user';
 import { Repos } from './repos';
 import { SearchService } from './services/search.service';
+import { HttpClient } from "@angular/common/http"
 
 @Component({
   selector: 'app-root',

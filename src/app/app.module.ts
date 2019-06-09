@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { SearchService } from './services/search.service';
+import { HttpClientModule } from "@angular/common/http"
 
 import { AppComponent } from './app.component';
 import { SearchService } from './services/search.service';
@@ -10,7 +10,8 @@ import { SearchService } from './services/search.service';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [SearchService],
   bootstrap: [AppComponent]
