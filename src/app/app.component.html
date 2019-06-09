@@ -1,11 +1,17 @@
 <div class="container">
   <div class="card">
-    <div class="card-body">
-      <p>Hello {{user.name}}</p>
-      <p>{{user.followers}}</p>
-      <p>{{user.following}}</p>
-      <p>{{user.public_repos}}</p>
-      <img class="img-thumbnail" src="{{user.avatar_url}}">
+    <div class="card-body row">
+      <div class="col-md-3">
+        <img class="img-thumbnail" src="{{user.avatar_url}}">
+      </div>
+      <div class="col-md-5 col-md-offset-2">
+        <h2><strong>{{user.name}}</strong></h2>
+       <ul>
+         <li class="list-unstyled"><strong>Number of folowers: </strong>{{user.followers}}</li>
+         <li class="list-unstyled"><strong>Number of following: </strong>{{user.following}}</li>
+         <li class="list-unstyled"><strong>Number of repositories: </strong>{{user.public_repos}}</li>
+       </ul>
+      </div>
     </div>
   </div>
 </div>
