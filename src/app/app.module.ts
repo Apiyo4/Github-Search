@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { SearchService } from './services/search.service';
 
 import { AppComponent } from './app.component';
+import { SearchService } from './services/search.service';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

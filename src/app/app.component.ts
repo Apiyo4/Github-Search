@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from './user';
 import { Repos } from './repos';
+import { SearchService } from './services/search.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,6 @@ import { Repos } from './repos';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(private searchService:SearchService ){}
 
 }
