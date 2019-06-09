@@ -4,10 +4,12 @@ import { HttpClientModule } from "@angular/common/http"
 
 import { AppComponent } from './app.component';
 import { SearchService } from './services/search.service';
+import { SearchFormComponent } from './search-form/search-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchFormComponent
   ],
   imports: [
     BrowserModule,
