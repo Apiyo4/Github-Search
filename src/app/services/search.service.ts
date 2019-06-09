@@ -7,7 +7,10 @@ import { HttpClient } from "@angular/common/http"
   providedIn: 'root'
 })
 export class SearchService {
-
-  constructor(private http:HttpClient) {
-}
+  private username = "Apiyo4";
+  constructor(private http: HttpClient) {
+  }
+  getUser() {
+    return this.http.get('https://api.github.com/users/' + this.username)
+  }
 }

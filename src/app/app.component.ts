@@ -10,6 +10,11 @@ import { HttpClient } from "@angular/common/http"
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private searchService:SearchService ){}
+  user: any;
+  constructor(private searchService:SearchService ){
+    this.searchService.getUser().subscribe(user => {
+    this.user = user;
+  })
+  }
 
 }
