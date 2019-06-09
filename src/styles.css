@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+  background-image: url("https://images.pexels.com/photos/262488/pexels-photo-262488.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 24px;
+  color: #ED6A5A;
+}

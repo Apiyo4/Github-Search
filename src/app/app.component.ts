@@ -11,14 +11,22 @@ import { HttpClient } from "@angular/common/http"
 })
 export class AppComponent {
   user: any;
-  repos:any;
-  constructor(private searchService:SearchService ){
+  repos: any;
+  constructor(private searchService: SearchService) {
     this.searchService.getUser().subscribe(user => {
-    this.user = user;
-  })
-  this.searchService.getRepos().subscribe(repos => {
-  this.repos = repos;
-})
+      this.user = user;
+    })
+    this.searchService.getRepos().subscribe(repos => {
+      this.repos = repos;
+    })
+  }
+  search(){
+    this.searchService.getUser().subscribe(user => {
+      this.user = user;
+    })
+    this.searchService.getRepos().subscribe(repos => {
+      this.repos = repos;
+    })
   }
 
 }

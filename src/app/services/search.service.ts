@@ -18,4 +18,7 @@ export class SearchService {
   getRepos() {
     return this.http.get<Repos>(this.apiUrl + this.username + '/repos' + "?access_token=" + environment.access_token);
   }
+  updateUsername(username:any){
+    this.username=username;
+  }
 }

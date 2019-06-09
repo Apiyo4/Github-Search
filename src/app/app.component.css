@@ -1,8 +1,11 @@
 .container{
   margin-top: 4%;
+
 }
 .card{
   margin-top: 5%;
+  background-color: transparent;
+
 }
 .col-md-5{
   margin-left: 10%;
@@ -17,4 +20,7 @@ ul{
   font-size: 24px;
   padding-bottom: 10px;
   text-align: center;
+}
+h1 a{
+ color: #ED6A5A;
 }
