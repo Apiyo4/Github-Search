@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { SearchService } from './services/search.service';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
