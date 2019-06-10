@@ -20,7 +20,6 @@ In case of anything feel free to get in touch at odingoannette@gmail.com
 ### License
 *MIT* 
 Copyright (c) {2019} **Annette Odingo** https://github.com/Apiyo4/Github-Search/blob/master/LICENSE
->>>>>>> 73c3450706df199a80ed6e816b35474e22d1a557
 
 ## Development server
 
