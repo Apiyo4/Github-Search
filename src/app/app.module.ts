@@ -8,12 +8,14 @@ import { SearchService } from './services/search.service';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HighlightDirective } from './highlight.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchFormComponent,
-    HighlightDirective
+    HighlightDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,7 @@
          <li class="list-unstyled"><strong>Number of folowers: </strong>{{user.followers}}</li>
          <li class="list-unstyled"><strong>Number of following: </strong>{{user.following}}</li>
          <li class="list-unstyled"><strong>Number of repositories: </strong>{{user.public_repos}}</li>
+         <li class="list-unstyled">The account has been around for {{user.created_at|date|dateCount}} days</li>
        </ul>
       </div>
     </div>
