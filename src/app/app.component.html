@@ -9,7 +9,7 @@
   <div class="card">
     <div class="card-body row">
       <div class="col-md-3">
-        <img class="img-thumbnail" src="{{user.avatar_url}}">
+        <img class="img-thumbnail" src={{user.avatar_url}}>
       </div>
       <div class="col-md-5">
         <h2 appHighlight><strong>{{user.name}}</strong></h2>
@@ -17,7 +17,7 @@
          <li class="list-unstyled"><strong>Number of folowers: </strong>{{user.followers}}</li>
          <li class="list-unstyled"><strong>Number of following: </strong>{{user.following}}</li>
          <li class="list-unstyled"><strong>Number of repositories: </strong>{{user.public_repos}}</li>
-         <li class="list-unstyled">The account has been around for {{user.created_at|date|dateCount}} days</li>
+         <li class="list-unstyled">The account has been around for {{user.created_at|dateCount}} days</li>
        </ul>
       </div>
     </div>

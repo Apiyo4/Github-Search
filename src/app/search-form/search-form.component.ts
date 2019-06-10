@@ -16,6 +16,7 @@ export class SearchFormComponent implements OnInit {
   search() {
 
    this.searchUser.emit(this.username);
+
  }
 
   ngOnInit() {
